@@ -57,3 +57,25 @@
     background-size: cover;
     background-position: top center;
 }
+
+@mixin headingBorder($colorTexto, $colorLinea){
+    /* Efecto de subrayado */
+
+    font-size: 3.6rem;
+    color: $colorTexto;
+    margin-top: 5rem;
+    display: inline-block; //Corta el elemento al espacio que utilice pero sin perder las propiedades del block
+    @include tablet{ 
+        margin-top: 0;
+    }
+    &::after{
+        content: '';
+        background-color: $colorLinea;
+        height: 1rem;
+        width: calc(100% + 1rem); /* Se añade un rem para que sobresalga la linea */
+        display: block;
+        margin: -1.4rem 0 0 0;
+
+    }
+
+}

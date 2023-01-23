@@ -1,0 +1,45 @@
+/** Beneficios **/
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.beneficios{
+    background-color: v.$primario;
+
+    .grid-beneficios{
+        @include m.tablet{ 
+            @include m.grid(5, 4rem);
+            align-items: center;
+
+        }
+    }
+    .contenido-beneficios{
+        grid-column: 1/4;
+    }
+    .imagen{
+        grid-column: 4/6;
+        transition-property: rotete scale;
+        transition-duration: 0.3s;
+
+        &:hover{
+            transform: rotate(8deg) scale(1.08);
+            cursor: pointer;
+        }
+    }
+
+    p{
+        text-align: center;
+        @include m.tablet{ 
+            text-align: justify;
+        }
+        
+    }
+
+    h2{
+        @include m.headingBorder(v.$secundario, v.$blanco); 
+        text-align: center;
+        @include m.tablet{ 
+            text-align: left;
+        }
+    }
+}
