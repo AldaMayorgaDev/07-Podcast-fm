@@ -1,0 +1,12 @@
+/****** Crear Podcast *******/
+
+@use 'base/mixins' as m;
+
+.crea-grid{
+    text-align: center;
+    @include m.tablet{ 
+        text-align: left;
+        @include m.grid(2, 4rem);
+        align-items: center;
+    }
+}
