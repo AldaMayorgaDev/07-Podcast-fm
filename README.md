@@ -41,6 +41,7 @@ _Las técnologias utilizadas para el desarrollo fueron:_
 
 ## Reporte de Lighthouse 💡 
 
+<img width="824" alt="Captura de Pantalla 2023-01-23 a la(s) 22 37 01" src="https://user-images.githubusercontent.com/94152243/214213155-f4a9ec5d-9c77-4d6a-9c0c-761e2feab88a.png">
 
 
 
