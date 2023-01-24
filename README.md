@@ -52,7 +52,7 @@ _A continuación se muestra un ejemplo de cómo es el proceso de instalación y 
 
 1. Clonar el repositorio
    ```sh
-   git clone https://github.com/AldaMayorgaDev/05-Cafeteria.git
+   git clone git@github.com:AldaMayorgaDev/07-Podcast-fm.git
    ```
 2. Instalación de Packages NPM
    ```sh
