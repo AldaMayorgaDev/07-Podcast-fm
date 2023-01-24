@@ -5,7 +5,7 @@
 @use 'base/mixins' as m;
 
 .estadisticas{
-    padding: 2rem;
+    
     h2{
         @include m.headingBorder(v.$secundario, v.$primario);
     }

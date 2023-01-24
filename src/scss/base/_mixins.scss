@@ -79,3 +79,12 @@
     }
 
 }
+
+/* Mixin para icono en el background */
+
+@mixin iconBg($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem; /* 50% horizontal, 2rem separacion de arriba */
+    background-size: 10rem;
+}
