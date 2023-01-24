@@ -50,3 +50,41 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin bgImage($url, $colorDegradado){
+    background-image: linear-gradient($colorDegradado 0%, $colorDegradado 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+@mixin headingBorder($colorTexto, $colorLinea){
+    /* Efecto de subrayado */
+
+    font-size: 3.6rem;
+    color: $colorTexto;
+    margin-top: 5rem;
+    display: inline-block; //Corta el elemento al espacio que utilice pero sin perder las propiedades del block
+    @include tablet{ 
+        margin-top: 0;
+    }
+    &::after{
+        content: '';
+        background-color: $colorLinea;
+        height: 1rem;
+        width: calc(100% + 1rem); /* Se añade un rem para que sobresalga la linea */
+        display: block;
+        margin: -1.4rem 0 0 0;
+
+    }
+
+}
+
+/* Mixin para icono en el background */
+
+@mixin iconBg($url){
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem; /* 50% horizontal, 2rem separacion de arriba */
+    background-size: 10rem;
+}
